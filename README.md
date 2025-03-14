@@ -1,14 +1,40 @@
-SniffX v2 is a Frida-based tool for intercepting and Sniffing the iOS API traffic, 
-bypassing SSL Pinning, and extracting API endpoints used by an application.
+# SniffX v2 - iOS API Traffic Interceptor
 
+## Overview
+SniffX v2 is a Frida-based tool for intercepting iOS API traffic, bypassing SSL Pinning, and extracting API endpoints used by an application.
 
-**Features**
+## Features
+- **Intercept API Requests**: Capture outgoing requests from iOS applications.
+- **Bypass SSL Pinning**: Disable SSL Pinning to inspect encrypted traffic.
+- **Filter API Calls**: Target specific API endpoints.
+- **List All Endpoints**: Extract and display all API endpoints used by an application.
 
-Intercept API Requests: Capture outgoing requests from iOS applications.
+## Installation
+```sh
+pip install frida
+```
 
-Bypass SSL Pinning: Disable SSL Pinning to inspect encrypted traffic.
+## Usage
+### Attach to an App and Bypass SSL Pinning
+```sh
+python3 sniffx.py <App>
+```
 
-Filter API Calls: Target specific API endpoints.
+### Intercept Only Specific API Requests
+```sh
+python3 sniffx.py <App> --api /login
+```
 
-List All Endpoints: Extract and display all API endpoints used by an application.
+### Enable SSL Pinning Bypass Only
+```sh
+python3 sniffx.py <App> --ssl-bypass-only
+```
+
+### Extract and List All API Endpoints
+```sh
+python3 sniffx.py <App> --list-endpoints
+```
+
+## Author
+**Abdulrahman Al-Hakami**
 
