@@ -1,5 +1,9 @@
 # SniffX v2 - iOS API Traffic Interceptor
 
+![Frida](https://img.shields.io/badge/Frida-16.5.6-blue) 
+![iOS](https://img.shields.io/badge/iOS-Jailbreak%20Bypass-green)
+![Security](https://img.shields.io/badge/Security-Bypass-red)
+
 ## Overview
 SniffX v2 is a Frida-based tool for intercepting iOS API traffic, bypassing SSL Pinning, and extracting API endpoints used by an application.
 
